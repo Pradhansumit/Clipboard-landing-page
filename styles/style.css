@@ -1,0 +1,263 @@
+.text-light {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button.download-button {
+  padding: 0.75rem 5rem;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+}
+button.ios-button {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 10px 20px hsla(171, 75%, 67%, 0.3);
+  border-bottom: 4px solid hsl(171, 66%, 35%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+button.ios-button:hover {
+  background-color: hsla(171, 66%, 44%, 0.6);
+}
+button.mac-button {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 10px 20px hsla(233, 75%, 67%, 0.3);
+  border-bottom: 4px solid hsl(233, 40%, 50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button.mac-button:hover {
+  background-color: hsla(233, 100%, 69%, 0.6);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+section.heading-section .heading-brandimg {
+  display: flex;
+  place-content: center center;
+  margin-bottom: 4rem;
+}
+section.heading-section .heading-title {
+  margin-bottom: 2rem;
+}
+section.heading-section .heading-desc {
+  margin-bottom: 4rem;
+}
+
+section.snippet-section .snippet-title {
+  margin-bottom: 1rem;
+}
+section.snippet-section .snippet-desc {
+  margin-bottom: 3rem;
+}
+section.snippet-section .snippet-image-title-container .image-box {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+section.snippet-section .snippet-image-title-container .image-box img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.snippet-section .snippet-image-title-container .list-container .list-title:not(:last-of-type) {
+  margin-bottom: 2.5rem;
+}
+section.snippet-section .snippet-image-title-container .list-container .list-title .list-heading {
+  margin-bottom: 0.5rem;
+}
+
+section.access-section {
+  margin-top: 9rem;
+  margin-bottom: 7rem;
+}
+section.access-section .access-heading {
+  margin-bottom: 1.25rem;
+}
+section.access-section .access-desc {
+  margin-bottom: 2.5rem;
+}
+section.access-section .access-image-container {
+  width: 100%;
+}
+section.access-section .access-image-container img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section.workflow-section .workflow-title {
+  margin-bottom: 1.5rem;
+}
+section.workflow-section .workflow-desc {
+  margin-bottom: 2rem;
+}
+section.workflow-section .workflow-list-container img {
+  margin: 2rem 0;
+}
+section.workflow-section .workflow-list-container .list-heading {
+  margin-bottom: 1rem;
+}
+
+section.brand-section {
+  margin: 6rem 0;
+}
+section.brand-section .image-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center center;
+  gap: 2rem;
+}
+section.brand-section .image-container img {
+  width: 100px;
+  height: auto;
+}
+
+section.clipboard-section .clipboard-title {
+  margin-bottom: 1.5rem;
+}
+section.clipboard-section .clipboard-desc {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsla(201, 11%, 66%, 0.1);
+}
+footer .footer-image-container {
+  width: 50px;
+  height: 50px;
+}
+footer .footer-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+footer .links-container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: Center;
+}
+footer .links-container .links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+footer .links-container .links a:hover {
+  color: hsl(171, 66%, 44%);
+}
+footer .social-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+footer .social-container i {
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer .social-container i:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+  section {
+    padding: 0 2rem;
+    text-align: center;
+  }
+  footer {
+    padding: 3rem 2rem;
+  }
+  button.ios-button {
+    margin-bottom: 1rem;
+  }
+  section.heading-section {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7rem 2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  button.ios-button {
+    margin-right: 1rem;
+  }
+  section .section-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .section-top > p {
+    max-width: 40rem;
+  }
+  section.heading-section {
+    background-image: url("../images/bg-header-desktop.png");
+  }
+  section.snippet-section .snippet-image-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  section.snippet-section .snippet-image-title-container .image-box {
+    transform: translateX(-10rem);
+    width: 90%;
+  }
+  section.snippet-section .snippet-image-title-container .list-container {
+    text-align: start;
+  }
+  section.workflow-section .workflow-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  section.brand-section .image-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer .links-container {
+    flex-direction: row;
+    gap: 5rem;
+    margin-right: 10rem;
+  }
+  footer .links-container .links {
+    align-items: start;
+  }
+}/*# sourceMappingURL=style.css.map */
